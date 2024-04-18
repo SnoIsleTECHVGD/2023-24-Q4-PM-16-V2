@@ -117852,8 +117852,8 @@ MonoBehaviour:
   jumps: 2
   left: 97
   right: 100
-  buildUp: 333
-  maxSpeed: 333
+  buildUp: 99999
+  maxSpeed: 99999
   jump: 119
   jumpForce: 10
 --- !u!1 &1600552076
