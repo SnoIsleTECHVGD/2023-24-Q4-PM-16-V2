@@ -196,6 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 763192962}
   - component: {fileID: 763192961}
+  - component: {fileID: 763192966}
   - component: {fileID: 763192960}
   - component: {fileID: 763192964}
   - component: {fileID: 763192963}
@@ -219,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8466dd50bd5281447bc264296107b474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!212 &763192961
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -346,6 +348,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 99
+--- !u!114 &763192966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763192959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534ee130f4bee754d817db191368d0f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navAgent: {fileID: 0}
+  player: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  health: 9
+  walkPointRange: 0
+  timeBetweenAttacks: 0
+  sightRange: 0
+  attackRange: 0
+  damage: 22
+  animator: {fileID: 0}
+  hitEffect: {fileID: 0}
 --- !u!1 &1165442427
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +582,7 @@ GameObject:
   - component: {fileID: 1476654982}
   - component: {fileID: 1476654981}
   - component: {fileID: 1476654980}
+  - component: {fileID: 1476654986}
   - component: {fileID: 1476654979}
   - component: {fileID: 1476654978}
   - component: {fileID: 1476654983}
@@ -818,6 +849,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &1476654986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476654977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534ee130f4bee754d817db191368d0f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navAgent: {fileID: 0}
+  player: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  health: 99
+  walkPointRange: 0
+  timeBetweenAttacks: 0
+  sightRange: 0
+  attackRange: 0
+  damage: 9
+  animator: {fileID: 0}
+  hitEffect: {fileID: 0}
 --- !u!1 &1518228054
 GameObject:
   m_ObjectHideFlags: 0
