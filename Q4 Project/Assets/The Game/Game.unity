@@ -1292,6 +1292,10 @@ PrefabInstance:
       value: -2.3516197
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260295, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
+      propertyPath: m_Mass
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996450703420260295, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_GravityScale
       value: 1
       objectReference: {fileID: 0}
@@ -118513,9 +118517,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumps: 2
   left: 97
-  right: 100
-  buildUp: 99999
-  maxSpeed: 99999
+  right: 283
+  buildUp: 999
+  maxSpeed: 999
   jump: 119
   jumpForce: 10
 --- !u!114 &1584179566
