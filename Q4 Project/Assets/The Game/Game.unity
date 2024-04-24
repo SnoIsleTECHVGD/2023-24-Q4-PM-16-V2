@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1584179564}
   speed: 5
-  offset: {x: 0, y: 0.5, z: -30}
+  offset: {x: 0, y: 0.2, z: -30}
 --- !u!1001 &357306464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -118518,10 +118518,10 @@ MonoBehaviour:
   jumps: 2
   left: 97
   right: 283
-  buildUp: 999
-  maxSpeed: 999
+  buildUp: 99999
+  maxSpeed: 99999
   jump: 119
-  jumpForce: 10
+  jumpForce: 30
 --- !u!114 &1584179566
 MonoBehaviour:
   m_ObjectHideFlags: 0
