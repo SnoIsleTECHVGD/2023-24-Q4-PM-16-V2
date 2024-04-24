@@ -1288,12 +1288,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260292, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5707912
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996450703420260292, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_Size.y
-      value: 0.15694499
+      value: 0.05692005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996450703420260292, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.20005226
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260292, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_Offset.y
-      value: -1.7
+      value: -1.26
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260294, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_Enabled
@@ -1305,7 +1313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260295, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_GravityScale
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260312, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_FlipX
