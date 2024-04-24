@@ -9,7 +9,7 @@ public class PlayerAnimation : MonoBehaviour
     private CustomInput input = null;
     private Vector2 moveVector = Vector2.zero;
     private Rigidbody2D rb = null;
-    private float moveSpeed = 0f;
+    private float moveSpeed = 1f;
     private Animator animator = null;
 
     private void Awake()

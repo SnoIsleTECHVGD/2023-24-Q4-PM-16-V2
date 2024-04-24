@@ -1283,13 +1283,29 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 274791479617718751, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996450703420260292, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5707912
+      objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260292, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_Size.y
-      value: 0.15694499
+      value: 0.05692005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996450703420260292, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.20005226
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260292, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_Offset.y
-      value: -2.3516197
+      value: -1.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996450703420260294, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260295, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_Mass
@@ -1297,7 +1313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260295, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_GravityScale
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260312, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_FlipX
@@ -1317,15 +1333,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260313, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.72481626
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260313, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.72481626
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260313, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.72481626
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7996450703420260313, guid: f31b87938e1cb9a4a93785245969ec8c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -118510,7 +118526,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584179558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f413af2302bebbe4da938c3283023345, type: 3}
   m_Name: 
@@ -118555,7 +118571,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 72
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 3.126915
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0

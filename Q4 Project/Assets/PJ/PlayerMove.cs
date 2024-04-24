@@ -26,7 +26,7 @@ public class PlayerMove : MonoBehaviour
 
         FlipSprite();
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if(Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
             isGrounded = false;
