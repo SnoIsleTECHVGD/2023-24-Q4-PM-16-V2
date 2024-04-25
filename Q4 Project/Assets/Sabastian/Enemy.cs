@@ -108,7 +108,6 @@ public class Enemy : MonoBehaviour
             {
                 /*
                     YOU CAN USE THIS TO GET THE PLAYER HUD AND CALL THE TAKE DAMAGE FUNCTION
-
                 PlayerHUD playerHUD = hit.transform.GetComponent<PlayerHUD>();
                 if (playerHUD != null)
                 {
