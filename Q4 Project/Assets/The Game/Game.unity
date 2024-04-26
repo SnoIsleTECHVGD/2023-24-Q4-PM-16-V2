@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 90007130}
   - component: {fileID: 90007129}
   - component: {fileID: 90007128}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2591,7 +2591,7 @@ GameObject:
   - component: {fileID: 509098666}
   - component: {fileID: 509098665}
   - component: {fileID: 509098667}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Objects2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120603,7 +120603,7 @@ GameObject:
   - component: {fileID: 1392467392}
   - component: {fileID: 1392467391}
   - component: {fileID: 1392467390}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: objects fourgroud 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121490,7 +121490,7 @@ MonoBehaviour:
   buildUp: 99999
   maxSpeed: 99999
   jump: 119
-  jumpForce: 25
+  jumpForce: 17
   jumplayer:
     serializedVersion: 2
     m_Bits: 128
@@ -122459,7 +122459,7 @@ GameObject:
   - component: {fileID: 1669421832}
   - component: {fileID: 1669421831}
   - component: {fileID: 1669421833}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Objects again
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122474,7 +122474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669421829}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.17, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(jump) && jumps > 0)
 
         {
-            rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
             jumps--;
         }
         if (Grounded())
