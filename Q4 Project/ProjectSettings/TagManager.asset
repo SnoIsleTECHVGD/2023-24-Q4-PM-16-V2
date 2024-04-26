@@ -47,6 +47,9 @@ TagManager:
   - name: Background
     uniqueID: 3840878367
     locked: 0
+  - name: background (
+    uniqueID: 3741715319
+    locked: 0
   - name: whitwalls
     uniqueID: 3138876089
     locked: 0
