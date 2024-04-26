@@ -9565,7 +9565,7 @@ GameObject:
   - component: {fileID: 571554403}
   - component: {fileID: 571554402}
   - component: {fileID: 571554404}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor again
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121091,6 +121091,9 @@ MonoBehaviour:
   maxSpeed: 333
   jump: 119
   jumpForce: 10
+  jumplayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &1438492815
 Rigidbody2D:
   serializedVersion: 4
@@ -121488,6 +121491,9 @@ MonoBehaviour:
   maxSpeed: 99999
   jump: 119
   jumpForce: 25
+  jumplayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &1584179566
 MonoBehaviour:
   m_ObjectHideFlags: 0

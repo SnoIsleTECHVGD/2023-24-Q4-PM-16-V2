@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
 
     private Rigidbody2D rb2D;
+    public LayerMask jumplayer; 
 
 
     // Start is called before the first frame update
@@ -49,10 +50,21 @@ public class PlayerMovement : MonoBehaviour
             jumps = 1;
         }
 
+    }
+
+    private void FixedUpdate()
+    {
+
         rb2D.velocity = new Vector2(Mathf.Clamp(rb2D.velocity.x, -maxSpeed, maxSpeed), Mathf.Clamp(rb2D.velocity.y, -jumpForce, jumpForce));
     }
+
     bool Grounded()
     {
-        return Physics2D.BoxCast(transform.position + Vector3.down / .7f, Vector2.one / 2, 0, Vector2.zero);
+        return Physics2D.BoxCast(transform.position + Vector3.down / .7f, Vector2.one / 2, 0, Vector2.zero, 100, jumplayer);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawCube(transform.position + Vector3.down / .7f, Vector2.one / 2);
     }
 }
