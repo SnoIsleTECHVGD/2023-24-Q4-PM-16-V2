@@ -29,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/The Game/SabastianCredits.unity
     guid: 00b3635bf0a4c0b479d217fbbe6d02c3
+  - enabled: 1
+    path: Assets/The Game/Ending.unity
+    guid: 8a8824b7f0ac2e14eaa0bdd44b8038d4
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7a428458b9e4abe4d80f96bd2b3ba3b8, type: 2}
