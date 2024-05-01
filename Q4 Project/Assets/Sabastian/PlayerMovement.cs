@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
 
     private Rigidbody2D rb2D;
+    Animator animator;
+
     public LayerMask jumplayer; 
 
 
@@ -21,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
     }
 
@@ -56,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
     {
 
         rb2D.velocity = new Vector2(Mathf.Clamp(rb2D.velocity.x, -maxSpeed, maxSpeed), Mathf.Clamp(rb2D.velocity.y, -jumpForce, jumpForce));
+        animator.SetFloat("xVelocity", Mathf.Abs(rb2D.velocity.x));
+        animator.SetFloat("yVelocity", rb2D.velocity.y);
     }
 
     bool Grounded()

@@ -35,7 +35,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = moveVector * moveSpeed;
+
     }
 
     private void OnMovementPerformed(InputAction.CallbackContext value)
@@ -45,7 +45,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             transform.localScale = Vector3.one;
         }
-        else
+        else if (moveVector.x < 0)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }
@@ -53,7 +53,6 @@ public class PlayerAnimation : MonoBehaviour
     }
     private void OnMovementCancelled(InputAction.CallbackContext value)
     {
-        moveVector = Vector2.zero;
         animator.SetBool("isRunning", false);
     }
 }
