@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
@@ -22,6 +23,9 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool isHissing = Input.GetKey("o");
+        bool isSwatting = Input.GetKey("p");
+
         horizontalInput = Input.GetAxis("Horizontal");
 
         FlipSprite();
@@ -32,7 +36,24 @@ public class PlayerMove : MonoBehaviour
             isGrounded = false;
             animator.SetBool("isJumping", !isGrounded);
         }
+        if (isHissing) 
+        {
+            animator.SetBool("isHissing", true);
+        }
+        if (!isHissing)
+        {
+            animator.SetBool("isHissing", false);
+        }
+        if (isSwatting)
+        {
+            animator.SetBool("isSwatting", true);
+        }
+        if (!isSwatting)
+        {
+            animator.SetBool("isSwatting", false);
+        }
     }
+
 
     private void FixedUpdate()
     {
