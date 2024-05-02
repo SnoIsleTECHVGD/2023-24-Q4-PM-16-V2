@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour
     public float speed;
     private float direction;
 
-    void start()
+   void Start()
 
     {
 
@@ -23,8 +23,14 @@ public class EnemyController : MonoBehaviour
 
         float moveHorizontal = direction;
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f);
-        GetComponent<Rigidbody>().velocity = movement * speed;
+        Vector3 movement = new Vector3(moveHorizontal * speed, GetComponent <Rigidbody2D>().velocity.y);
+
+        if (Vector2.Distance(target.position, transform.position) < 3)
+        {
+            movement.x = 0;
+        }
+
+        GetComponent<Rigidbody2D>().velocity = movement;
 
         if (target.position.x > enemyPosition.position.x)
         {

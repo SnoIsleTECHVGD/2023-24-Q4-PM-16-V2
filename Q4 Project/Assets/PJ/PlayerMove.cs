@@ -23,8 +23,8 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool isHissing = Input.GetKey("o");
-        bool isSwatting = Input.GetKey("p");
+        bool isHissing = Input.GetKey("h");
+        bool isSwatting = Input.GetKey("j");
 
         horizontalInput = Input.GetAxis("Horizontal");
 
@@ -39,6 +39,14 @@ public class PlayerMove : MonoBehaviour
         if (isHissing) 
         {
             animator.SetBool("isHissing", true);
+
+            foreach (var item in FindObjectsOfType<EnemyController>()  )
+            {
+                if (Vector2.Distance(transform.position, item.transform.position) < 4)
+                {
+                    item.speed = -10;
+                }
+            }
         }
         if (!isHissing)
         {
