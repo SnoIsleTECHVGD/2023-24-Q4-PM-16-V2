@@ -23,8 +23,8 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool isHissing = Input.GetKey("o");
-        bool isSwatting = Input.GetKey("p");
+        bool isHissing = Input.GetKey("h");
+        bool isSwatting = Input.GetKey("j");
 
         horizontalInput = Input.GetAxis("Horizontal");
 
