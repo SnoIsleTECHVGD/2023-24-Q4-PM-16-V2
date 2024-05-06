@@ -5,7 +5,6 @@ public class EnemyController : MonoBehaviour
 {
 
     private Transform target;
-    private Transform enemyPosition;
     public float speed;
     private float direction;
 
@@ -14,7 +13,6 @@ public class EnemyController : MonoBehaviour
     {
 
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        enemyPosition = GameObject.FindGameObjectWithTag("Enemy").transform;
 
     }
 
@@ -25,21 +23,21 @@ public class EnemyController : MonoBehaviour
 
         Vector3 movement = new Vector3(moveHorizontal * speed, GetComponent <Rigidbody2D>().velocity.y);
 
-        if (Vector2.Distance(target.position, transform.position) < 3)
+        if (Vector2.Distance(target.position, transform.position) < 5)
         {
             movement.x = 0;
         }
 
         GetComponent<Rigidbody2D>().velocity = movement;
 
-        if (target.position.x > enemyPosition.position.x)
+        if (target.position.x > transform.position.x)
         {
 
             direction = 1;
 
         }
 
-        if (target.position.x < enemyPosition.position.x)
+        if (target.position.x < transform.position.x)
         {
 
             direction = -1;

@@ -41,7 +41,7 @@ public class PlayerMove : MonoBehaviour
 
             foreach (var item in FindObjectsOfType<EnemyController>()  )
             {
-                if (Vector2.Distance(transform.position, item.transform.position) < 4)
+                if (Vector2.Distance(transform.position, item.transform.position) < 6)
                 {
                     item.speed = -10;
                 }
