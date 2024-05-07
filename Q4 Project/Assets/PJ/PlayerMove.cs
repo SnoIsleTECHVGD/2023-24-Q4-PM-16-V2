@@ -45,6 +45,8 @@ public class PlayerMove : MonoBehaviour
                 {
                     item.speed = -10;
                 }
+
+                item.GetComponent<EnemyWalk>().enabled = false;
             }
         }
         if (!isHissing)

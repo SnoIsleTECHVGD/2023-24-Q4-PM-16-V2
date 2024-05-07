@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EnemyWalk : MonoBehaviour
 {
+    private float direction;
     public GameObject pointA;
     public GameObject pointB;
     private Rigidbody2D rb;
@@ -24,6 +25,8 @@ public class EnemyWalk : MonoBehaviour
     void Update()
     {
         Vector2 point = currentPoint.position - transform.position;
+        float moveHorizontal = direction;
+       
         if(currentPoint == pointB.transform)
         {
             rb.velocity = new Vector2(speed, 0);
